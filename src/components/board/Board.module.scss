@@ -1,0 +1,32 @@
+.boardList {
+   max-width: 600px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+
+   .boardListBox {
+      display: flex;
+      justify-content: center;
+   }
+
+   p {
+      padding: 5px 10px;
+      background-color: #fff;
+      border: 1px dashed #c4cacd;
+   }
+
+   button {
+      border: none;
+      background-color: transparent;
+   }
+
+   svg {
+      width: 20px;
+      height: 20px;
+
+      fill: #c4cacd;
+      stroke: white;
+   }
+
+}

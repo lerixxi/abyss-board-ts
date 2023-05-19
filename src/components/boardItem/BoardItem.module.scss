@@ -1,0 +1,69 @@
+.boardItem {
+   position: relative;
+   margin-top: 15px;
+   min-width: max-content;
+   text-align: center;
+
+   &::after {
+      position: absolute;
+      content: '';
+      bottom: calc(100% - 1px);
+      left: 50%;
+      width: 1px;
+      height: 16px;
+      background: #c4cacd;
+      transform: translateX(-50%);
+   }
+
+
+   input {
+      padding: 5px 10px;
+      margin-right: 5px;
+      border: 1px solid #c4cacd;
+      outline: none;
+      font-size: 12px;
+   }
+
+   button {
+      padding: 0;
+      height: 29px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      vertical-align: text-top;
+
+      &:not(:last-child) {
+         margin-right: 3px;
+      }
+   }
+
+   .deleteSvg {
+      fill: #e35877;
+   }
+
+   .doneSvg {
+      width: 23px;
+      height: 23px;
+      fill: #5dd17e;
+   }
+
+   .cancelSvg {
+      fill: #ffdc64;
+   }
+}
+
+.subitemsWrapper {
+   position: relative;
+   display: flex;
+   gap: 20px;
+
+   &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 115px;
+      left: 115px;
+      height: 1px;
+      background: #c4cacd;
+   }
+}

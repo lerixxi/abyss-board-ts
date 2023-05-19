@@ -1,0 +1,118 @@
+header {
+   display: flex;
+   justify-content: space-between;
+
+   .services {
+      display: flex;
+      align-items: center;
+
+      a {
+         margin-right: 10px;
+         color: #000;
+         font-size: 22px;
+      }
+
+      .notification {
+         padding: 0 7px;
+         color: white;
+         background-color: #fcba4a;
+         border-radius: 40%;
+      }
+   }
+
+   .nav {
+      position: relative;
+      display: flex;
+
+      button {
+         padding: 10px;
+         margin-right: 5px;
+         border: none;
+         color: #fff;
+
+      }
+
+      svg {
+         width: 15px;
+         height: 15px;
+
+         fill: #c4cacd;
+         stroke: #c4cacd;
+      }
+
+      .listView {
+         padding: 10px 15px;
+         font-size: 14px;
+         background-color: #6b70e0;
+         text-transform: uppercase;
+      }
+
+
+      .zoomSelect {
+         position: relative;
+         min-width: 60px;
+
+         ul {
+            padding: 10px;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+
+            li {
+               color: #c4cacd;
+               cursor: pointer;
+               transition: all 0.3s ease;
+
+               &:hover {
+                  color: #FFFFFF;
+                  background-color: #c4cacd;
+               }
+            }
+         }
+      }
+
+      .centerBtn,
+      .zoomOut,
+      .zoomSelect,
+      .zoomIn {
+         background-color: white;
+         color: #c4cacd;
+         transition: all 0.3s ease;
+
+         &:hover,
+         &focus {
+            background-color: #c4cacd;
+            color: white;
+
+            svg {
+               fill: white;
+               stroke: white;
+            }
+         }
+      }
+
+      .centerBtn,
+      .zoomOut,
+      .zoomIn {
+         width: 50px;
+         height: 50px;
+      }
+
+      .notificationBtn {
+         display: none;
+         position: absolute;
+         top: 100%;
+         right: 55%;
+         padding: 3px 5px;
+         margin-top: 5px;
+         background-color: #c4cacd;
+         color: white;
+         font-size: 15px;
+      }
+
+      .centerBtn:hover~.notificationBtn {
+         display: block;
+      }
+   }
+}
